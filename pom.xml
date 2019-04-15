@@ -61,7 +61,8 @@
 		<!-- 第五章数据分页排序案例 -->
 		<module>chapter-5-spring-boot-paging-sorting</module>
 		<module>springboot-jarslink</module>
+        <module>springboot-mybatis-generator-util</module>
 
-	</modules>
+    </modules>
 
 </project>
