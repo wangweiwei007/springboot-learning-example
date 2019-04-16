@@ -1,6 +1,4 @@
-package org.spring.springboot.domain;
-
-import java.io.Serializable;
+package org.spring.springboot.model;
 
 /**
  * 城市实体类

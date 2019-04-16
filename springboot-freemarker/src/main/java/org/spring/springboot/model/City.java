@@ -1,11 +1,11 @@
-package org.spring.springboot.domain;
+package org.spring.springboot.model;
 
 /**
- * 用户实体类
+ * 城市实体类
  *
  * Created by bysocket on 07/02/2017.
  */
-public class User {
+public class City {
 
     /**
      * 城市编号
@@ -13,24 +13,19 @@ public class User {
     private Long id;
 
     /**
+     * 省份编号
+     */
+    private Long provinceId;
+
+    /**
      * 城市名称
      */
-    private String userName;
+    private String cityName;
 
     /**
      * 描述
      */
     private String description;
-
-    private City city;
-
-    public City getCity() {
-        return city;
-    }
-
-    public void setCity(City city) {
-        this.city = city;
-    }
 
     public Long getId() {
         return id;
@@ -40,12 +35,20 @@ public class User {
         this.id = id;
     }
 
-    public String getUserName() {
-        return userName;
+    public Long getProvinceId() {
+        return provinceId;
     }
 
-    public void setUserName(String userName) {
-        this.userName = userName;
+    public void setProvinceId(Long provinceId) {
+        this.provinceId = provinceId;
+    }
+
+    public String getCityName() {
+        return cityName;
+    }
+
+    public void setCityName(String cityName) {
+        this.cityName = cityName;
     }
 
     public String getDescription() {

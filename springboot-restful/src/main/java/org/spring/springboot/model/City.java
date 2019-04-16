@@ -1,15 +1,11 @@
-package org.spring.springboot.domain;
-
-import java.io.Serializable;
+package org.spring.springboot.model;
 
 /**
  * 城市实体类
  *
  * Created by bysocket on 07/02/2017.
  */
-public class City implements Serializable {
-
-    private static final long serialVersionUID = -1L;
+public class City {
 
     /**
      * 城市编号
@@ -30,13 +26,6 @@ public class City implements Serializable {
      * 描述
      */
     private String description;
-
-    public City(Long id, Long provinceId, String cityName, String description) {
-        this.id = id;
-        this.provinceId = provinceId;
-        this.cityName = cityName;
-        this.description = description;
-    }
 
     public Long getId() {
         return id;
@@ -68,15 +57,5 @@ public class City implements Serializable {
 
     public void setDescription(String description) {
         this.description = description;
-    }
-
-    @Override
-    public String toString() {
-        return "City{" +
-                "id=" + id +
-                ", provinceId=" + provinceId +
-                ", cityName='" + cityName + '\'' +
-                ", description='" + description + '\'' +
-                '}';
     }
 }

@@ -4,7 +4,7 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.spring.springboot.domain.City;
+import org.spring.springboot.model.City;
 import org.spring.springboot.service.CityService;
 import org.spring.springboot.service.impl.CityServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;

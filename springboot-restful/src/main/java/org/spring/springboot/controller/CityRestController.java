@@ -1,6 +1,6 @@
 package org.spring.springboot.controller;
 
-import org.spring.springboot.domain.City;
+import org.spring.springboot.model.City;
 import org.spring.springboot.service.CityService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.MediaType;

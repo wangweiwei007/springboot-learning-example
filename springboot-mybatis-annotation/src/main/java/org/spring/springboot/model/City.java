@@ -1,9 +1,9 @@
-package org.spring.springboot.domain;
+package org.spring.springboot.model;
 
 /**
  * 城市实体类
  *
- * Created by bysocket on 07/02/2017.
+ * Created by xchunzhao on 02/05/2017.
  */
 public class City {
 

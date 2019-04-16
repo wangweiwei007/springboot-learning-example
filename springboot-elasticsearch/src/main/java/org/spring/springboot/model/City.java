@@ -1,4 +1,4 @@
-package org.spring.springboot.domain;
+package org.spring.springboot.model;
 
 import org.springframework.data.elasticsearch.annotations.Document;
 

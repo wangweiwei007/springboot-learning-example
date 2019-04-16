@@ -21,12 +21,12 @@
         </plugin>
 
         <!-- 生成一个新的selectByExample方法，这个方法可以接收offset和limit参数，主要用来实现分页，只支持mysql(已使用pagehelper代替) -->
-        <!--<plugin type="com.zheng.common.plugin.PaginationPlugin"></plugin>-->
+        <plugin type="spring.mybatis.generator.plugin.PaginationPlugin"></plugin>
 
         <!-- 生成在XML中的<cache>元素 -->
-        <plugin type="org.mybatis.generator.plugins.CachePlugin">
+        <!--<plugin type="org.mybatis.generator.plugins.CachePlugin">-->
             <!-- 使用ehcache -->
-            <property name="cache_type" value="org.mybatis.caches.ehcache.LoggingEhcache" />
+           <!--<property name="cache_type" value="org.mybatis.caches.ehcache.LoggingEhcache" />-->
             <!-- 内置cache配置 -->
             <!--
             <property name="cache_eviction" value="LRU" />
@@ -34,7 +34,7 @@
             <property name="cache_readOnly" value="true" />
             <property name="cache_size" value="1024" />
             -->
-        </plugin>
+     <!-- </plugin>-->
 
         <!-- Java模型生成equals和hashcode方法 -->
         <plugin type="org.mybatis.generator.plugins.EqualsHashCodePlugin"></plugin>
@@ -52,15 +52,15 @@
                         password="Cqm4ycPb" />
 
         <!-- model生成 -->
-        <javaModelGenerator targetPackage="com.zheng.shop.dao.model" targetProject="D:/learn/git-rep/springboot-learning-example/springboot-mybatis-generator-util/src/main/java" />
+        <javaModelGenerator targetPackage="com.fmFinance.creditLoan.fyd.domain" targetProject="D:/learn/git-rep/springboot-learning-example/springboot-mybatis-generator-util/src/main/java" />
 
         <!-- MapperXML生成 -->
-        <sqlMapGenerator targetPackage="com.zheng.shop.dao.mapper" targetProject="D:/learn/git-rep/springboot-learning-example/springboot-mybatis-generator-util/src/main/java" />
+        <sqlMapGenerator targetPackage="com.fmFinance.creditLoan.fyd.dao" targetProject="D:/learn/git-rep/springboot-learning-example/springboot-mybatis-generator-util/src/main/java" />
 
         <!-- Mapper接口生成 -->
-        <javaClientGenerator targetPackage="com.zheng.shop.dao.mapper" targetProject="D:/learn/git-rep/springboot-learning-example/springboot-mybatis-generator-util/src/main/java" type="XMLMAPPER" />
+        <javaClientGenerator targetPackage="com.fmFinance.creditLoan.fyd.dao" targetProject="D:/learn/git-rep/springboot-learning-example/springboot-mybatis-generator-util/src/main/java" type="XMLMAPPER" />
 
         <!-- 需要映射的表 -->
-                                    <table tableName="acct_balance_sheet" domainObjectName="AcctBalanceSheet"></table>
+                                    <table tableName="acct_entrusted_display_information" domainObjectName="AcctEntrustedDisplayInformation"></table>
                         </context>
 </generatorConfiguration>

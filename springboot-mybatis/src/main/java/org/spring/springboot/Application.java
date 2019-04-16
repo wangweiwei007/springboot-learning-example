@@ -1,11 +1,10 @@
 package org.spring.springboot;
 
 import org.mybatis.spring.annotation.MapperScan;
-import org.spring.springboot.dao.CityDao;
-import org.spring.springboot.domain.City;
-import org.springframework.boot.CommandLineRunner;
+import org.spring.springboot.aop.PushMessageAop;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.annotation.Bean;
 
 /**
  * Spring Boot 应用启动类
@@ -17,6 +16,11 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 // mapper 接口类扫描包配置
 @MapperScan("org.spring.springboot.dao")
 public class Application {
+
+    @Bean
+    public PushMessageAop PushMessageAop(){
+        return new PushMessageAop();
+    }
 
     public static void main(String[] args) {
         // 程序启动入口

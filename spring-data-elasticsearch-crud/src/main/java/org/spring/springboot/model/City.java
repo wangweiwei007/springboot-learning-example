@@ -1,4 +1,4 @@
-package org.spring.springboot.domain;
+package org.spring.springboot.model;
 
 import org.springframework.data.elasticsearch.annotations.Document;
 
@@ -7,7 +7,7 @@ import java.io.Serializable;
 /**
  * 城市实体类
  * <p>
- * Created by bysocket on 20/06/2017.
+ * Created by bysocket on 03/05/2017.
  */
 @Document(indexName = "province", type = "city")
 public class City implements Serializable {

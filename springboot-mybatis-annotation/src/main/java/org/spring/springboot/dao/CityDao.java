@@ -1,7 +1,7 @@
 package org.spring.springboot.dao;
 
 import org.apache.ibatis.annotations.*;
-import org.spring.springboot.domain.City;
+import org.spring.springboot.model.City;
 
 /**
  * 城市 DAO 接口类
