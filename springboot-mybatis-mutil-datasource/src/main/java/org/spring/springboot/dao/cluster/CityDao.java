@@ -2,7 +2,7 @@ package org.spring.springboot.dao.cluster;
 
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
-import org.spring.springboot.domain.City;
+import org.spring.springboot.model.City;
 
 /**
  * 城市 DAO 接口类

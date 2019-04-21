@@ -1,6 +1,6 @@
 package org.spring.springboot.service.impl;
 
-import org.spring.springboot.domain.City;
+import org.spring.springboot.model.City;
 import org.spring.springboot.service.CityService;
 import org.springframework.stereotype.Service;
 

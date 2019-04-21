@@ -1,6 +1,6 @@
 package org.spring.springboot.dubbo;
 
-import org.spring.springboot.domain.City;
+import org.spring.springboot.model.City;
 
 /**
  * 城市业务 Dubbo 服务层

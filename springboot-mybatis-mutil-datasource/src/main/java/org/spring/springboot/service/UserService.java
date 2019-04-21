@@ -1,7 +1,6 @@
 package org.spring.springboot.service;
 
-import org.spring.springboot.domain.City;
-import org.spring.springboot.domain.User;
+import org.spring.springboot.model.User;
 
 /**
  * 用户业务接口层

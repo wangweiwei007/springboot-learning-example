@@ -2,7 +2,7 @@ package org.spring.springboot.dao.master;
 
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
-import org.spring.springboot.domain.User;
+import org.spring.springboot.model.User;
 
 /**
  * 用户 DAO 接口类
