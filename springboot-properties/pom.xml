@@ -41,5 +41,20 @@
             <version>1.4.2.RELEASE</version>
             <scope>test</scope>
         </dependency>
+
+        <dependency>
+            <groupId>com.ctrip.framework.apollo</groupId>
+            <artifactId>apollo-client</artifactId>
+            <version>0.6.2</version>
+        </dependency>
+
     </dependencies>
+
+    <repositories>
+    <repository>
+        <id>internal.repo</id>
+        <url>https://raw.github.com/ctripcorp/apollo/mvn-repo/</url>
+    </repository>
+    </repositories>
+
 </project>
