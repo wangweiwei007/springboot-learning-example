@@ -1,10 +1,10 @@
 package org.spring.springboot.controller;
 
 
+import cn.com.yitong.inte.resource.service.AccountService;
 import com.alibaba.dubbo.config.annotation.Reference;
-import org.spring.springboot.domain.City;
 import org.spring.springboot.dubbo.CityDubboConsumerService;
-import org.spring.springboot.dubbo.CityDubboService;
+import org.spring.springboot.model.City;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -21,4 +21,5 @@ public class CityController {
        City city = cityDubboConsumerService.printCity(name);
        return city;
     }
+
 }

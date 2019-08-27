@@ -5,9 +5,13 @@ import org.junit.Test;
 import org.junit.Before;
 import org.junit.After;
 import org.spring.springboot.BaseTest;
+import org.spring.springboot.dao.CityMapper;
 import org.spring.springboot.model.City;
 import org.spring.springboot.service.CityService;
 import org.springframework.beans.factory.annotation.Autowired;
+
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * CityServiceImpl Tester.
@@ -20,6 +24,8 @@ public class CityServiceImplTest extends BaseTest {
 
     @Autowired
     private CityService service;
+    @Autowired
+    private CityMapper cityMapper;
 
     @Before
     public void before() throws Exception {
@@ -48,6 +54,15 @@ public class CityServiceImplTest extends BaseTest {
         city.setProvinceId("001");
         boolean b = service.updateCity(city);
         System.out.println(b);
+    }
+
+    @Test
+    public void testGetCityByIds() throws Exception {
+        List<String> list=new ArrayList<String>();
+        list.add("001");
+        list.add("002");
+       List<City> cityList = cityMapper.getCiyByIds(list);
+        System.out.println(cityList);
     }
 
 

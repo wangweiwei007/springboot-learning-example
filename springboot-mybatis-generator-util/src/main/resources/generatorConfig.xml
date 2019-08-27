@@ -52,15 +52,15 @@
                         password="Cqm4ycPb" />
 
         <!-- model生成 -->
-        <javaModelGenerator targetPackage="com.fmFinance.creditLoan.fyd.domain" targetProject="D:/learn/git-rep/springboot-learning-example/springboot-mybatis-generator-util/src/main/java" />
+        <javaModelGenerator targetPackage="com.fmFinance.creditLoan.bzyw.fyd.domain" targetProject="D:/learn/git-rep/springboot-learning-example/springboot-mybatis-generator-util/src/main/java" />
 
         <!-- MapperXML生成 -->
-        <sqlMapGenerator targetPackage="com.fmFinance.creditLoan.fyd.dao" targetProject="D:/learn/git-rep/springboot-learning-example/springboot-mybatis-generator-util/src/main/java" />
+        <sqlMapGenerator targetPackage="com.fmFinance.creditLoan.bzyw.fyd.dao" targetProject="D:/learn/git-rep/springboot-learning-example/springboot-mybatis-generator-util/src/main/java" />
 
         <!-- Mapper接口生成 -->
-        <javaClientGenerator targetPackage="com.fmFinance.creditLoan.fyd.dao" targetProject="D:/learn/git-rep/springboot-learning-example/springboot-mybatis-generator-util/src/main/java" type="XMLMAPPER" />
+        <javaClientGenerator targetPackage="com.fmFinance.creditLoan.bzyw.fyd.dao" targetProject="D:/learn/git-rep/springboot-learning-example/springboot-mybatis-generator-util/src/main/java" type="XMLMAPPER" />
 
         <!-- 需要映射的表 -->
-                                    <table tableName="acct_entrusted_display_information" domainObjectName="AcctEntrustedDisplayInformation"></table>
+                                    <table tableName="acct_real_info" domainObjectName="AcctRealInfo"></table>
                         </context>
 </generatorConfiguration>

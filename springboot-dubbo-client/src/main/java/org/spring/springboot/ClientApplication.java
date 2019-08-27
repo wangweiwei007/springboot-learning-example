@@ -1,5 +1,6 @@
 package org.spring.springboot;
 
+import cn.com.yitong.inte.resource.service.AccountService;
 import org.spring.springboot.dubbo.CityDubboConsumerService;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -14,11 +15,12 @@ import org.springframework.context.ConfigurableApplicationContext;
 @SpringBootApplication
 public class ClientApplication {
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws Exception {
         // 程序启动入口
         // 启动嵌入式的 Tomcat 并初始化 Spring 环境及其各 Spring 组件
         ConfigurableApplicationContext run = SpringApplication.run(ClientApplication.class, args);
-        //CityDubboConsumerService cityService = run.getBean(CityDubboConsumerService.class);
-        //cityService.printCity();
+        CityDubboConsumerService cityService = run.getBean(CityDubboConsumerService.class);
+        cityService.printCity("北京");
+
     }
 }

@@ -1,6 +1,7 @@
 package org.spring.springboot.dao;
 
 import org.apache.ibatis.annotations.Param;
+import org.aspectj.lang.annotation.Pointcut;
 import org.spring.springboot.model.City;
 import org.spring.springboot.model.CityExample;
 
@@ -28,4 +29,7 @@ public interface CityMapper {
     int updateByPrimaryKeySelective(City record);
 
     int updateByPrimaryKey(City record);
+
+    List<City> getCiyByIds( List<String> ids);
+
 }

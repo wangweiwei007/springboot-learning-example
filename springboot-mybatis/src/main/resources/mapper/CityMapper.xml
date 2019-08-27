@@ -193,4 +193,12 @@
       description = #{description,jdbcType=VARCHAR}
     where id = #{id,jdbcType=INTEGER}
   </update>
+
+  <select id="getCiyByIds" parameterType="java.util.List" resultMap="BaseResultMap">
+    SELECT * FROM city
+    WHERE   province_id IN
+    <foreach collection="list" index="index" item="item" open="(" separator="," close=")">
+    #{item}
+  </foreach>
+  </select>
 </mapper>
