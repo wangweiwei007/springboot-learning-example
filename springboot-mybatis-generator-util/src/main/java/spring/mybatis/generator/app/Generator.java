@@ -15,9 +15,9 @@ public class Generator {
 
     // 根据命名规范，只修改此常量值即可
     private static String MODULE = "";
-    private static String DATABASE = "fm_criterion_business";
-    private static String TABLE_PREFIX = "acct_entrusted_display";
-    private static String PACKAGE_NAME = "com.fmFinance.creditLoan.fyd";
+    private static String DATABASE = "springcloud";
+    private static String TABLE_PREFIX = "product";
+    private static String PACKAGE_NAME = "com.github.wangweiwei007.orderservice";
     private static String JDBC_DRIVER = PropertiesFileUtil.getInstance("generator").get("generator.jdbc.driver");
     private static String JDBC_URL = PropertiesFileUtil.getInstance("generator").get("generator.jdbc.url");
     private static String JDBC_USERNAME = PropertiesFileUtil.getInstance("generator").get("generator.jdbc.username");

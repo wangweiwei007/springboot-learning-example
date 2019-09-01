@@ -49,18 +49,18 @@
         <jdbcConnection driverClass="${generator.jdbc.driver}"
                         connectionURL="${generator.jdbc.url}"
                         userId="${generator.jdbc.username}"
-                        password="Cqm4ycPb" />
+                        password="root" />
 
         <!-- model生成 -->
-        <javaModelGenerator targetPackage="com.fmFinance.creditLoan.bzyw.fyd.domain" targetProject="D:/learn/git-rep/springboot-learning-example/springboot-mybatis-generator-util/src/main/java" />
+        <javaModelGenerator targetPackage="com.github.wangweiwei007.orderservice.domain" targetProject="D:/learn/git-rep/springboot-learning-example/springboot-mybatis-generator-util/src/main/java" />
 
         <!-- MapperXML生成 -->
-        <sqlMapGenerator targetPackage="com.fmFinance.creditLoan.bzyw.fyd.dao" targetProject="D:/learn/git-rep/springboot-learning-example/springboot-mybatis-generator-util/src/main/java" />
+        <sqlMapGenerator targetPackage="com.github.wangweiwei007.orderservice.dao" targetProject="D:/learn/git-rep/springboot-learning-example/springboot-mybatis-generator-util/src/main/java" />
 
         <!-- Mapper接口生成 -->
-        <javaClientGenerator targetPackage="com.fmFinance.creditLoan.bzyw.fyd.dao" targetProject="D:/learn/git-rep/springboot-learning-example/springboot-mybatis-generator-util/src/main/java" type="XMLMAPPER" />
+        <javaClientGenerator targetPackage="com.github.wangweiwei007.orderservice.dao" targetProject="D:/learn/git-rep/springboot-learning-example/springboot-mybatis-generator-util/src/main/java" type="XMLMAPPER" />
 
         <!-- 需要映射的表 -->
-                                    <table tableName="acct_real_info" domainObjectName="AcctRealInfo"></table>
+                                    <table tableName="product_order" domainObjectName="ProductOrder"></table>
                         </context>
 </generatorConfiguration>
